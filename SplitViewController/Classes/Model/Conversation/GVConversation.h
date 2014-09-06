@@ -10,4 +10,9 @@
 
 @interface GVConversation : NSObject
 
++ (instancetype)itemForDictionary: (NSDictionary *)dictionary;
+- (instancetype)initWithDictionary: (NSDictionary *)dictionary;
+
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly, strong) NSArray *photos;
 @end

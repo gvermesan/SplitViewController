@@ -7,7 +7,10 @@
 //
 
 #import "BaseTableViewController.h"
+@class GVConversation;
 
 @interface GVConversationViewController : BaseTableViewController
+
+@property (nonatomic, strong) GVConversation *conversation;
 
 @end

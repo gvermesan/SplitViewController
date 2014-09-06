@@ -8,6 +8,12 @@
 
 #import "GVUtils.h"
 
-@implementation GVUtils
+NSString * const kUserName = @"name";
+NSString * const kConversations = @"conversations";
+NSString * const kPhoto = @"lastPhoto";
 
-@end
+NSString * const kImageName = @"imageName";
+NSString * const kComment = @"comment";
+NSString * const kRating = @"rating";
+
+NSString * const kAllPhotos = @"photos";

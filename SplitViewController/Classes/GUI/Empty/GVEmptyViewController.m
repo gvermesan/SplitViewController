@@ -7,6 +7,7 @@
 //
 
 #import "GVEmptyViewController.h"
+#import "GVEmptyView.h"
 
 @interface GVEmptyViewController ()
 
@@ -16,22 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    GVEmptyView *emptyView = [[GVEmptyView alloc] initWithFrame:CGRectZero];
+    emptyView.backgroundColor = [UIColor whiteColor];
+    emptyView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:emptyView];
+    
+    NSDictionary *views = NSDictionaryOfVariableBindings(emptyView);
+    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[emptyView]|" options:0 metrics:nil views:views];
+    [self.view addConstraints:constraints];
+    
+    constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[emptyView]|" options:0 metrics:nil views:views];
+    [self.view addConstraints:constraints];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

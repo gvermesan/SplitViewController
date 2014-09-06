@@ -6,8 +6,11 @@
 //  Copyright (c) 2014 Gabriel Vermesan. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@class GVUser;
 
-@interface GVProfileViewController : NSObject
+@interface GVProfileViewController : UIViewController
+
+@property (nonatomic, strong) GVUser *user;
 
 @end

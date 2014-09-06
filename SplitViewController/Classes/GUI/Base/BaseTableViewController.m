@@ -6,32 +6,52 @@
 //  Copyright (c) 2014 Gabriel Vermesan. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BaseTableViewController.h"
 
-@interface ViewController ()
+@interface BaseTableViewController ()
+@property (nonatomic, copy) NSString *cellIdentifier;
 
 @end
 
-@implementation ViewController
+@implementation BaseTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.cellIdentifier = NSStringFromClass([self class]);
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.tableView registerClass:self.tableViewCellClass forCellReuseIdentifier:self.cellIdentifier];
+    self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.tableView];
+    
+    NSDictionary *views = NSDictionaryOfVariableBindings(_tableView);
+    NSArray *contraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_tableView]|" options:0 metrics:nil views:views];
+    [self.view addConstraints:contraints];
+    
+    contraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_tableView]|" options:0 metrics:nil views:views];
+    [self.view addConstraints:contraints];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (Class)tableViewCellClass {
+    return [UITableViewCell class];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)configereCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    return;
 }
-*/
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
+    if (!cell) {
+        cell = [[self.tableViewCellClass alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:self.cellIdentifier];
+    }
+    [self configereCell:cell atIndexPath:indexPath];
+    return cell;
+}
 
 @end

@@ -10,4 +10,6 @@
 
 @interface GVTraintOverrideViewController : UIViewController
 
+@property (nonatomic, strong) UIViewController *viewController;
+
 @end

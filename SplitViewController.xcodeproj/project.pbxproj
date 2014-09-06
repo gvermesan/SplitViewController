@@ -7,12 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EF66FF919AF6EE800D0BAA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF66FF819AF6EE800D0BAA7 /* main.m */; };
+		1E5C082519BAF47000E1E319 /* GVEmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5C082419BAF47000E1E319 /* GVEmptyViewController.m */; };
+		1E5C082A19BAF98A00E1E319 /* GVTraintOverrideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5C082919BAF98A00E1E319 /* GVTraintOverrideViewController.m */; };
+		1E5C082E19BB017500E1E319 /* GVEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5C082D19BB017500E1E319 /* GVEmptyView.m */; };
+		1EAC96CD19B35CB600ED2E46 /* GVDescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAC96CC19B35CB600ED2E46 /* GVDescriptionView.m */; };
+		1EAC96D119B3697800ED2E46 /* GVConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAC96D019B3697800ED2E46 /* GVConversationViewController.m */; };
+		1EB66C8919AF8DA100A6C3E8 /* MenuItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EB66C8819AF8DA100A6C3E8 /* MenuItems.plist */; };
+		1EB66CA019AF90B200A6C3E8 /* GVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB66C9F19AF90B200A6C3E8 /* GVUser.m */; };
+		1EB66CA519AF923700A6C3E8 /* GVPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB66CA419AF923700A6C3E8 /* GVPhoto.m */; };
+		1EB66CA919AF938100A6C3E8 /* GVUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB66CA819AF938100A6C3E8 /* GVUtils.m */; };
+		1EBB45E019AF9AD50029C157 /* GVConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB45DF19AF9AD50029C157 /* GVConversation.m */; };
+		1EBBEE2819B07CBB00398174 /* GVProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBEE2719B07CBB00398174 /* GVProfileViewController.m */; };
+		1EBBEE2C19B07CE100398174 /* GVProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBEE2B19B07CE100398174 /* GVProfileView.m */; };
+		1EBBEE3019B07FC800398174 /* GVLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBEE2F19B07FC800398174 /* GVLabel.m */; };
+		1EBBEE3419B0A6F500398174 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBEE3319B0A6F500398174 /* BaseTableViewController.m */; };
+		1EBBEE6019B0F79F00398174 /* GVPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBEE5F19B0F79F00398174 /* GVPhotoViewController.m */; };
+		1EBBEE6619B0F7DA00398174 /* GVPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBEE6519B0F7DA00398174 /* GVPhotoView.m */; };
+		1EBBEE6919B104A200398174 /* GVControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBEE6819B104A200398174 /* GVControl.m */; };
 		1EF66FFC19AF6EE800D0BAA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF66FFB19AF6EE800D0BAA7 /* AppDelegate.m */; };
-		1EF66FFF19AF6EE800D0BAA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF66FFE19AF6EE800D0BAA7 /* ViewController.m */; };
-		1EF6700219AF6EE800D0BAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF6700019AF6EE800D0BAA7 /* Main.storyboard */; };
-		1EF6700419AF6EE800D0BAA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EF6700319AF6EE800D0BAA7 /* Images.xcassets */; };
 		1EF6701019AF6EE800D0BAA7 /* SplitViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF6700F19AF6EE800D0BAA7 /* SplitViewControllerTests.m */; };
+		1EF6702419AF6FF600D0BAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF6702219AF6FF600D0BAA7 /* Main.storyboard */; };
+		1EF6702619AF6FFD00D0BAA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EF6702519AF6FFD00D0BAA7 /* Images.xcassets */; };
+		1EF6702919AF700A00D0BAA7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EF6702719AF700A00D0BAA7 /* Info.plist */; };
+		1EF6702A19AF700A00D0BAA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF6702819AF700A00D0BAA7 /* main.m */; };
+		1EF6702D19AF706C00D0BAA7 /* GVManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF6702C19AF706C00D0BAA7 /* GVManager.m */; };
+		1EF6703119AF8C6700D0BAA7 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF6703019AF8C6700D0BAA7 /* MenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,18 +45,53 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E5C082319BAF47000E1E319 /* GVEmptyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVEmptyViewController.h; path = Classes/GUI/Empty/GVEmptyViewController.h; sourceTree = "<group>"; };
+		1E5C082419BAF47000E1E319 /* GVEmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVEmptyViewController.m; path = Classes/GUI/Empty/GVEmptyViewController.m; sourceTree = "<group>"; };
+		1E5C082819BAF98A00E1E319 /* GVTraintOverrideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVTraintOverrideViewController.h; path = Classes/GUI/Traint/GVTraintOverrideViewController.h; sourceTree = "<group>"; };
+		1E5C082919BAF98A00E1E319 /* GVTraintOverrideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVTraintOverrideViewController.m; path = Classes/GUI/Traint/GVTraintOverrideViewController.m; sourceTree = "<group>"; };
+		1E5C082C19BB017500E1E319 /* GVEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVEmptyView.h; path = Classes/GUI/Empty/View/GVEmptyView.h; sourceTree = "<group>"; };
+		1E5C082D19BB017500E1E319 /* GVEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVEmptyView.m; path = Classes/GUI/Empty/View/GVEmptyView.m; sourceTree = "<group>"; };
+		1EAC96CB19B35CB600ED2E46 /* GVDescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVDescriptionView.h; path = Classes/GUI/Photo/View/GVDescriptionView.h; sourceTree = "<group>"; };
+		1EAC96CC19B35CB600ED2E46 /* GVDescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVDescriptionView.m; path = Classes/GUI/Photo/View/GVDescriptionView.m; sourceTree = "<group>"; };
+		1EAC96CF19B3697800ED2E46 /* GVConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVConversationViewController.h; path = Classes/GUI/Conversation/GVConversationViewController.h; sourceTree = "<group>"; };
+		1EAC96D019B3697800ED2E46 /* GVConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVConversationViewController.m; path = Classes/GUI/Conversation/GVConversationViewController.m; sourceTree = "<group>"; };
+		1EB66C8819AF8DA100A6C3E8 /* MenuItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MenuItems.plist; path = Resources/MenuItems.plist; sourceTree = "<group>"; };
+		1EB66C9E19AF90B200A6C3E8 /* GVUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVUser.h; path = Classes/Model/User/GVUser.h; sourceTree = "<group>"; };
+		1EB66C9F19AF90B200A6C3E8 /* GVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVUser.m; path = Classes/Model/User/GVUser.m; sourceTree = "<group>"; };
+		1EB66CA319AF923700A6C3E8 /* GVPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVPhoto.h; path = Classes/Model/Photo/GVPhoto.h; sourceTree = "<group>"; };
+		1EB66CA419AF923700A6C3E8 /* GVPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVPhoto.m; path = Classes/Model/Photo/GVPhoto.m; sourceTree = "<group>"; };
+		1EB66CA719AF938100A6C3E8 /* GVUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVUtils.h; path = Classes/Utils/GVUtils.h; sourceTree = "<group>"; };
+		1EB66CA819AF938100A6C3E8 /* GVUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVUtils.m; path = Classes/Utils/GVUtils.m; sourceTree = "<group>"; };
+		1EBB45DE19AF9AD50029C157 /* GVConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVConversation.h; path = Classes/Model/Conversation/GVConversation.h; sourceTree = "<group>"; };
+		1EBB45DF19AF9AD50029C157 /* GVConversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVConversation.m; path = Classes/Model/Conversation/GVConversation.m; sourceTree = "<group>"; };
+		1EBBEE2619B07CBB00398174 /* GVProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVProfileViewController.h; path = Classes/GUI/Profile/GVProfileViewController.h; sourceTree = "<group>"; };
+		1EBBEE2719B07CBB00398174 /* GVProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVProfileViewController.m; path = Classes/GUI/Profile/GVProfileViewController.m; sourceTree = "<group>"; };
+		1EBBEE2A19B07CE100398174 /* GVProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVProfileView.h; path = Classes/GUI/Profile/View/GVProfileView.h; sourceTree = "<group>"; };
+		1EBBEE2B19B07CE100398174 /* GVProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVProfileView.m; path = Classes/GUI/Profile/View/GVProfileView.m; sourceTree = "<group>"; };
+		1EBBEE2E19B07FC800398174 /* GVLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVLabel.h; path = Classes/GUI/Profile/View/Helper/GVLabel.h; sourceTree = "<group>"; };
+		1EBBEE2F19B07FC800398174 /* GVLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVLabel.m; path = Classes/GUI/Profile/View/Helper/GVLabel.m; sourceTree = "<group>"; };
+		1EBBEE3219B0A6F500398174 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTableViewController.h; path = Classes/GUI/Base/BaseTableViewController.h; sourceTree = "<group>"; };
+		1EBBEE3319B0A6F500398174 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTableViewController.m; path = Classes/GUI/Base/BaseTableViewController.m; sourceTree = "<group>"; };
+		1EBBEE5E19B0F79F00398174 /* GVPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVPhotoViewController.h; path = Classes/GUI/Photo/GVPhotoViewController.h; sourceTree = "<group>"; };
+		1EBBEE5F19B0F79F00398174 /* GVPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVPhotoViewController.m; path = Classes/GUI/Photo/GVPhotoViewController.m; sourceTree = "<group>"; };
+		1EBBEE6419B0F7DA00398174 /* GVPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVPhotoView.h; path = Classes/GUI/Photo/View/GVPhotoView.h; sourceTree = "<group>"; };
+		1EBBEE6519B0F7DA00398174 /* GVPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVPhotoView.m; path = Classes/GUI/Photo/View/GVPhotoView.m; sourceTree = "<group>"; };
+		1EBBEE6719B104A200398174 /* GVControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVControl.h; path = Classes/GUI/Photo/View/GVControl.h; sourceTree = "<group>"; };
+		1EBBEE6819B104A200398174 /* GVControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVControl.m; path = Classes/GUI/Photo/View/GVControl.m; sourceTree = "<group>"; };
 		1EF66FF319AF6EE800D0BAA7 /* SplitViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EF66FF719AF6EE800D0BAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EF66FF819AF6EE800D0BAA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1EF66FFA19AF6EE800D0BAA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1EF66FFB19AF6EE800D0BAA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1EF66FFD19AF6EE800D0BAA7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1EF66FFE19AF6EE800D0BAA7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1EF6700119AF6EE800D0BAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1EF6700319AF6EE800D0BAA7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1EF6700919AF6EE800D0BAA7 /* SplitViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF6700E19AF6EE800D0BAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EF6700F19AF6EE800D0BAA7 /* SplitViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitViewControllerTests.m; sourceTree = "<group>"; };
+		1EF6702319AF6FF600D0BAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Resources/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EF6702519AF6FFD00D0BAA7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
+		1EF6702719AF700A00D0BAA7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		1EF6702819AF700A00D0BAA7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Resources/main.m; sourceTree = "<group>"; };
+		1EF6702B19AF706C00D0BAA7 /* GVManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVManager.h; path = Classes/Manager/GVManager.h; sourceTree = "<group>"; };
+		1EF6702C19AF706C00D0BAA7 /* GVManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVManager.m; path = Classes/Manager/GVManager.m; sourceTree = "<group>"; };
+		1EF6702F19AF8C6700D0BAA7 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = Classes/GUI/Menu/MenuViewController.h; sourceTree = "<group>"; };
+		1EF6703019AF8C6700D0BAA7 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = Classes/GUI/Menu/MenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +112,131 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E5C082219BAF44F00E1E319 /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				1E5C082B19BB015C00E1E319 /* View */,
+				1E5C082319BAF47000E1E319 /* GVEmptyViewController.h */,
+				1E5C082419BAF47000E1E319 /* GVEmptyViewController.m */,
+			);
+			name = Empty;
+			sourceTree = "<group>";
+		};
+		1E5C082619BAF96100E1E319 /* Traint */ = {
+			isa = PBXGroup;
+			children = (
+				1E5C082819BAF98A00E1E319 /* GVTraintOverrideViewController.h */,
+				1E5C082919BAF98A00E1E319 /* GVTraintOverrideViewController.m */,
+			);
+			name = Traint;
+			sourceTree = "<group>";
+		};
+		1E5C082B19BB015C00E1E319 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E5C082C19BB017500E1E319 /* GVEmptyView.h */,
+				1E5C082D19BB017500E1E319 /* GVEmptyView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1EAC96CE19B3694A00ED2E46 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				1EAC96CF19B3697800ED2E46 /* GVConversationViewController.h */,
+				1EAC96D019B3697800ED2E46 /* GVConversationViewController.m */,
+			);
+			name = Conversation;
+			sourceTree = "<group>";
+		};
+		1EB66CA119AF921400A6C3E8 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				1EBB45DE19AF9AD50029C157 /* GVConversation.h */,
+				1EBB45DF19AF9AD50029C157 /* GVConversation.m */,
+			);
+			name = Conversation;
+			sourceTree = "<group>";
+		};
+		1EB66CA219AF921C00A6C3E8 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				1EB66CA319AF923700A6C3E8 /* GVPhoto.h */,
+				1EB66CA419AF923700A6C3E8 /* GVPhoto.m */,
+			);
+			name = Photo;
+			sourceTree = "<group>";
+		};
+		1EB66CA619AF935400A6C3E8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1EB66CA719AF938100A6C3E8 /* GVUtils.h */,
+				1EB66CA819AF938100A6C3E8 /* GVUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		1EBBEE2519B07CA000398174 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1EBBEE2919B07CC200398174 /* View */,
+				1EBBEE2619B07CBB00398174 /* GVProfileViewController.h */,
+				1EBBEE2719B07CBB00398174 /* GVProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		1EBBEE2919B07CC200398174 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EBBEE2D19B07FA700398174 /* Helper */,
+				1EBBEE2A19B07CE100398174 /* GVProfileView.h */,
+				1EBBEE2B19B07CE100398174 /* GVProfileView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1EBBEE2D19B07FA700398174 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1EBBEE2E19B07FC800398174 /* GVLabel.h */,
+				1EBBEE2F19B07FC800398174 /* GVLabel.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		1EBBEE3119B0A6D000398174 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1EBBEE3219B0A6F500398174 /* BaseTableViewController.h */,
+				1EBBEE3319B0A6F500398174 /* BaseTableViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		1EBBEE5D19B0F77F00398174 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				1EBBEE6119B0F7A300398174 /* View */,
+				1EBBEE5E19B0F79F00398174 /* GVPhotoViewController.h */,
+				1EBBEE5F19B0F79F00398174 /* GVPhotoViewController.m */,
+			);
+			name = Photo;
+			sourceTree = "<group>";
+		};
+		1EBBEE6119B0F7A300398174 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EBBEE6419B0F7DA00398174 /* GVPhotoView.h */,
+				1EBBEE6519B0F7DA00398174 /* GVPhotoView.m */,
+				1EBBEE6719B104A200398174 /* GVControl.h */,
+				1EBBEE6819B104A200398174 /* GVControl.m */,
+				1EAC96CB19B35CB600ED2E46 /* GVDescriptionView.h */,
+				1EAC96CC19B35CB600ED2E46 /* GVDescriptionView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		1EF66FEA19AF6EE800D0BAA7 = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +258,10 @@
 		1EF66FF519AF6EE800D0BAA7 /* SplitViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1EF6701919AF6F2F00D0BAA7 /* Classes */,
 				1EF66FFA19AF6EE800D0BAA7 /* AppDelegate.h */,
 				1EF66FFB19AF6EE800D0BAA7 /* AppDelegate.m */,
-				1EF66FFD19AF6EE800D0BAA7 /* ViewController.h */,
-				1EF66FFE19AF6EE800D0BAA7 /* ViewController.m */,
-				1EF6700019AF6EE800D0BAA7 /* Main.storyboard */,
-				1EF6700319AF6EE800D0BAA7 /* Images.xcassets */,
+				1EF6701E19AF6F6700D0BAA7 /* Resources */,
 				1EF66FF619AF6EE800D0BAA7 /* Supporting Files */,
 			);
 			path = SplitViewController;
@@ -93,8 +270,8 @@
 		1EF66FF619AF6EE800D0BAA7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1EF66FF719AF6EE800D0BAA7 /* Info.plist */,
-				1EF66FF819AF6EE800D0BAA7 /* main.m */,
+				1EF6702719AF700A00D0BAA7 /* Info.plist */,
+				1EF6702819AF700A00D0BAA7 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -114,6 +291,78 @@
 				1EF6700E19AF6EE800D0BAA7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1EF6701919AF6F2F00D0BAA7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1EF6701D19AF6F5300D0BAA7 /* GUI */,
+				1EF6701A19AF6F4100D0BAA7 /* Model */,
+				1EB66CA619AF935400A6C3E8 /* Utils */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1EF6701A19AF6F4100D0BAA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1EB66CA219AF921C00A6C3E8 /* Photo */,
+				1EB66CA119AF921400A6C3E8 /* Conversation */,
+				1EF6701B19AF6F4700D0BAA7 /* User */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1EF6701B19AF6F4700D0BAA7 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				1EB66C9E19AF90B200A6C3E8 /* GVUser.h */,
+				1EB66C9F19AF90B200A6C3E8 /* GVUser.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		1EF6701C19AF6F4B00D0BAA7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1EF6702B19AF706C00D0BAA7 /* GVManager.h */,
+				1EF6702C19AF706C00D0BAA7 /* GVManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		1EF6701D19AF6F5300D0BAA7 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				1EBBEE3119B0A6D000398174 /* Base */,
+				1EAC96CE19B3694A00ED2E46 /* Conversation */,
+				1E5C082219BAF44F00E1E319 /* Empty */,
+				1EF6701C19AF6F4B00D0BAA7 /* Manager */,
+				1EF6702E19AF8C3800D0BAA7 /* Menu */,
+				1EBBEE5D19B0F77F00398174 /* Photo */,
+				1EBBEE2519B07CA000398174 /* Profile */,
+				1E5C082619BAF96100E1E319 /* Traint */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		1EF6701E19AF6F6700D0BAA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1EB66C8819AF8DA100A6C3E8 /* MenuItems.plist */,
+				1EF6702219AF6FF600D0BAA7 /* Main.storyboard */,
+				1EF6702519AF6FFD00D0BAA7 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1EF6702E19AF8C3800D0BAA7 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1EF6702F19AF8C6700D0BAA7 /* MenuViewController.h */,
+				1EF6703019AF8C6700D0BAA7 /* MenuViewController.m */,
+			);
+			name = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,8 +445,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EF6700219AF6EE800D0BAA7 /* Main.storyboard in Resources */,
-				1EF6700419AF6EE800D0BAA7 /* Images.xcassets in Resources */,
+				1EB66C8919AF8DA100A6C3E8 /* MenuItems.plist in Resources */,
+				1EF6702419AF6FF600D0BAA7 /* Main.storyboard in Resources */,
+				1EF6702619AF6FFD00D0BAA7 /* Images.xcassets in Resources */,
+				1EF6702919AF700A00D0BAA7 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +466,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EF66FFF19AF6EE800D0BAA7 /* ViewController.m in Sources */,
+				1EB66CA019AF90B200A6C3E8 /* GVUser.m in Sources */,
+				1EBB45E019AF9AD50029C157 /* GVConversation.m in Sources */,
+				1EB66CA919AF938100A6C3E8 /* GVUtils.m in Sources */,
+				1EBBEE6919B104A200398174 /* GVControl.m in Sources */,
+				1EF6702A19AF700A00D0BAA7 /* main.m in Sources */,
+				1EBBEE6019B0F79F00398174 /* GVPhotoViewController.m in Sources */,
+				1EBBEE3019B07FC800398174 /* GVLabel.m in Sources */,
+				1E5C082A19BAF98A00E1E319 /* GVTraintOverrideViewController.m in Sources */,
+				1E5C082519BAF47000E1E319 /* GVEmptyViewController.m in Sources */,
+				1EBBEE3419B0A6F500398174 /* BaseTableViewController.m in Sources */,
+				1EF6702D19AF706C00D0BAA7 /* GVManager.m in Sources */,
 				1EF66FFC19AF6EE800D0BAA7 /* AppDelegate.m in Sources */,
-				1EF66FF919AF6EE800D0BAA7 /* main.m in Sources */,
+				1EAC96CD19B35CB600ED2E46 /* GVDescriptionView.m in Sources */,
+				1EBBEE2C19B07CE100398174 /* GVProfileView.m in Sources */,
+				1EBBEE6619B0F7DA00398174 /* GVPhotoView.m in Sources */,
+				1EF6703119AF8C6700D0BAA7 /* MenuViewController.m in Sources */,
+				1EB66CA519AF923700A6C3E8 /* GVPhoto.m in Sources */,
+				1EAC96D119B3697800ED2E46 /* GVConversationViewController.m in Sources */,
+				1EBBEE2819B07CBB00398174 /* GVProfileViewController.m in Sources */,
+				1E5C082E19BB017500E1E319 /* GVEmptyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,10 +508,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1EF6700019AF6EE800D0BAA7 /* Main.storyboard */ = {
+		1EF6702219AF6FF600D0BAA7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1EF6700119AF6EE800D0BAA7 /* Base */,
+				1EF6702319AF6FF600D0BAA7 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -334,7 +602,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = SplitViewController/Info.plist;
+				INFOPLIST_FILE = SplitViewController/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -345,7 +613,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = SplitViewController/Info.plist;
+				INFOPLIST_FILE = SplitViewController/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -404,6 +672,7 @@
 				1EF6701519AF6EE800D0BAA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EF6701619AF6EE800D0BAA7 /* Build configuration list for PBXNativeTarget "SplitViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +681,7 @@
 				1EF6701819AF6EE800D0BAA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

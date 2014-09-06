@@ -10,12 +10,13 @@
 
 @implementation GVLabel
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFontTextStyle:(NSString *)style {
+    self = [super initWithFrame:CGRectZero];
+    if (self) {
+        self.font = [UIFont preferredFontForTextStyle:style];
+        self.translatesAutoresizingMaskIntoConstraints = NO;
+    }
+    return self;
 }
-*/
 
 @end

@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 Gabriel Vermesan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+#import "BaseTableViewController.h"
 
-@interface MenuViewController : UIViewController
+@interface MenuViewController : BaseTableViewController
 
 @end

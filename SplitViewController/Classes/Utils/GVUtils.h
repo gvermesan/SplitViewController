@@ -6,8 +6,14 @@
 //  Copyright (c) 2014 Gabriel Vermesan. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface GVUtils : NSObject
+FOUNDATION_EXTERN NSString * const kUserName;
+FOUNDATION_EXTERN NSString * const kConversations;
+FOUNDATION_EXTERN NSString * const kPhoto;
 
-@end
+FOUNDATION_EXTERN NSString * const kImageName;
+FOUNDATION_EXTERN NSString * const kComment;
+FOUNDATION_EXTERN NSString * const kRating;
+
+FOUNDATION_EXTERN  NSString * const kAllPhotos;

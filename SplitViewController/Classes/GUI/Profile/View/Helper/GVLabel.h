@@ -10,4 +10,6 @@
 
 @interface GVLabel : UILabel
 
+- (instancetype)initWithFontTextStyle:(NSString *)style;
+
 @end

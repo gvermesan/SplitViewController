@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class GVPhoto;
 
 @interface GVPhotoViewController : UIViewController
+
+@property (nonatomic, strong) GVPhoto *photo;
 
 @end

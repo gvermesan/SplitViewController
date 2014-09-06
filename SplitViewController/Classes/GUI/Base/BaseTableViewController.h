@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface BaseTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
+
+- (Class)tableViewCellClass;
+- (void)configereCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 
 @end

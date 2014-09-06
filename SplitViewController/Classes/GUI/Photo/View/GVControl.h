@@ -10,4 +10,6 @@
 
 @interface GVControl : UIControl
 
+@property (nonatomic, assign) NSUInteger ratingStar;
+
 @end

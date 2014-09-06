@@ -7,6 +7,9 @@
 //
 
 #import "GVConversationViewController.h"
+#import "GVConversation.h"
+#import "GVPhoto.h"
+#import "GVPhotoViewController.h"
 
 @interface GVConversationViewController ()
 
@@ -19,19 +22,35 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSUInteger count = [self.conversation.photos count];
+    return count;
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Overwritten methods
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)configereCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    GVPhoto *photo = self.conversation.photos[indexPath.row];
+    cell.textLabel.text = photo.comment;
 }
-*/
+
+#pragma mark - UITableView Delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    GVPhoto *photo = self.conversation.photos[indexPath.row];
+    NSString *title = [self navigationTitleForIndexPath:indexPath];
+    GVPhotoViewController *photoVC = [GVPhotoViewController new];
+    photoVC.title = title;
+    photoVC.photo = photo;
+    [self showDetailViewController:photoVC sender:self];
+}
+
+#pragma mark - Private method
+
+- (NSString *)navigationTitleForIndexPath:(NSIndexPath *)indexPath {
+    NSString *title;
+    title = [NSString stringWithFormat:@"%d of %d", indexPath.row + 1, [self.conversation.photos count]];
+    return title;
+}
 
 @end

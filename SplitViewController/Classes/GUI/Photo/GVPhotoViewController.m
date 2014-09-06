@@ -7,31 +7,57 @@
 //
 
 #import "GVPhotoViewController.h"
+#import "GVPhotoView.h"
+#import "GVPhoto.h"
 
 @interface GVPhotoViewController ()
+
+@property (nonatomic, strong) GVPhotoView *photoView;
 
 @end
 
 @implementation GVPhotoViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        [self.view addSubview:self.photoView];
+        [self setupContraints];
+    }
+    return self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Property
+
+- (void)setPhoto:(GVPhoto *)photo {
+    if ([_photo isEqual:photo]) {
+        return;
+    }
+    _photo = photo;
+    self.photoView.photo = _photo;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (GVPhotoView *)photoView {
+    if (!_photo) {
+        _photoView = [[GVPhotoView alloc] initWithFrame:CGRectZero];
+        _photoView.translatesAutoresizingMaskIntoConstraints = NO;
+    }
+    return _photoView;
 }
-*/
+
+#pragma mark - Private methods
+
+- (void)setupContraints {
+    NSDictionary *views = NSDictionaryOfVariableBindings(_photoView);
+    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_photoView]|"
+                                                                   options:0 metrics:nil
+                                                                     views:views];
+    [self.view addConstraints:constraints];
+    
+    constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_photoView]|"
+                                                          options:0 metrics:nil
+                                                            views:views];
+    [self.view addConstraints:constraints];
+}
 
 @end
