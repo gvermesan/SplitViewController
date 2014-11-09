@@ -10,13 +10,11 @@
 
 @interface GVTraintOverrideViewController ()
 
-@property (nonatomic, copy) UITraitCollection *traitCollection;
+@property (nonatomic, copy) UITraitCollection *forcedTraitCollection;
 
 @end
 
 @implementation GVTraintOverrideViewController
-
-@synthesize traitCollection = _traitCollection;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,12 +24,12 @@
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
     
     if (size.width > 320.f) {
-        self.traitCollection = [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassRegular];
+        self.forcedTraitCollection = [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassRegular];
     } else {
-        self.traitCollection = nil;
+        self.forcedTraitCollection = nil;
     }
     
-    [self setOverrideTraitCollection:self.traitCollection forChildViewController:self.viewController];
+    [self setOverrideTraitCollection:self.forcedTraitCollection forChildViewController:self.viewController];
     
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
 }
@@ -52,7 +50,7 @@
     [self addChildViewController:_viewController];
     
     [self layoutViewController];
-    [self setOverrideTraitCollection:self.traitCollection forChildViewController:_viewController];
+    [self setOverrideTraitCollection:self.forcedTraitCollection forChildViewController:_viewController];
     
 }
 

@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "GVManager.h"
 
-@interface AppDelegate () <UISplitViewControllerDelegate>
+@interface AppDelegate ()
 
 @end
 

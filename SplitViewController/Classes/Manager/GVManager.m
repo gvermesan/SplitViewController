@@ -10,6 +10,7 @@
 #import "MenuViewController.h"
 #import "GVEmptyViewController.h"
 #import "GVTraintOverrideViewController.h"
+#import "UIViewController+Helper.h"
 
 @interface GVManager () <UISplitViewControllerDelegate>
 
@@ -64,11 +65,28 @@
 
 #pragma mark - UISplitViewCpntrollerDelegate
 
-- (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController {
-    return YES;
+- (BOOL)splitViewController:(UISplitViewController *)splitViewController
+collapseSecondaryViewController:(UIViewController *)secondaryViewController
+  ontoPrimaryViewController:(UIViewController *)primaryViewController {
+    
+    GVPhoto *photo = [secondaryViewController photoForViewController];
+    
+    return photo ? NO : YES;
 }
 
-- (UIViewController *)splitViewController:(UISplitViewController *)splitViewController separateSecondaryViewControllerFromPrimaryViewController:(UIViewController *)primaryViewControlle {
+- (UIViewController *)splitViewController:(UISplitViewController *)splitViewController separateSecondaryViewControllerFromPrimaryViewController:(UIViewController *)primaryViewController {
+    
+    if ([primaryViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *primaryNavController = (UINavigationController *)primaryViewController;
+        for (UIViewController *viewController in [primaryNavController viewControllers] ) {
+            GVPhoto *photo = [viewController photoForViewController];
+            if (photo) {
+                return nil;
+            }
+        }
+    }
+    // If there's no content on the navigation stack, make an empty view controller for the detail side
     return [GVEmptyViewController new];
 }
+
 @end

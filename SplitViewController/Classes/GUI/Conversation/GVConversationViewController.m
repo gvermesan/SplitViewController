@@ -10,6 +10,7 @@
 #import "GVConversation.h"
 #import "GVPhoto.h"
 #import "GVPhotoViewController.h"
+#import "GVConversationViewController.h"
 
 @interface GVConversationViewController ()
 
@@ -34,6 +35,10 @@
     cell.textLabel.text = photo.comment;
 }
 
+- (BOOL)isPhotoContained:(GVPhoto *)photo {
+    return [self.conversation.photos containsObject:photo];
+}
+
 #pragma mark - UITableView Delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -49,7 +54,7 @@
 
 - (NSString *)navigationTitleForIndexPath:(NSIndexPath *)indexPath {
     NSString *title;
-    title = [NSString stringWithFormat:@"%d of %d", indexPath.row + 1, [self.conversation.photos count]];
+    title = [NSString stringWithFormat:@"%ld of %ld", indexPath.row + 1, [self.conversation.photos count]];
     return title;
 }
 

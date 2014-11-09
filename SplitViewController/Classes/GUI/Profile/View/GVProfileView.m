@@ -90,9 +90,9 @@
     self.imageView.image = [UIImage imageNamed:photo.imageName];
     self.nameLabel.text = user.name;
     
-    self.conversationsLabel.text = [NSString stringWithFormat:@"%i Conversations", [user.conversations count]];
+    self.conversationsLabel.text = [NSString stringWithFormat:@"%lud Conversations", [user.conversations count]];
     NSUInteger count = [self updateNumberOfPhotos:user.conversations];
-    self.photosLabel.text = [NSString stringWithFormat:@"%i Photos", count];
+    self.photosLabel.text = [NSString stringWithFormat:@"%ld Photos", count];
 }
 
 - (NSUInteger)updateNumberOfPhotos:(NSArray *)conversations {

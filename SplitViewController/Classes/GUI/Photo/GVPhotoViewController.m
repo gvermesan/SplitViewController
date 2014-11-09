@@ -9,6 +9,7 @@
 #import "GVPhotoViewController.h"
 #import "GVPhotoView.h"
 #import "GVPhoto.h"
+#import "UIViewController+Helper.h"
 
 @interface GVPhotoViewController ()
 
@@ -43,6 +44,12 @@
         _photoView.translatesAutoresizingMaskIntoConstraints = NO;
     }
     return _photoView;
+}
+
+#pragma mark - Overwritten methods
+
+- (GVPhoto *)photoForViewController {
+    return self.photo;
 }
 
 #pragma mark - Private methods

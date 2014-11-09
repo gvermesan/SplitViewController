@@ -11,6 +11,10 @@
       "filename" : "ratingInactive@2x.png"
     },
     {
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
       "heightClass" : "compact",
       "idiom" : "universal",
       "filename" : "ratingInactiveCompact.png",
@@ -21,6 +25,11 @@
       "idiom" : "universal",
       "filename" : "ratingInactiveCompact@2x.png",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "heightClass" : "compact"
     }
   ],
   "info" : {
